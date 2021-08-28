@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Tagebuch</string>
+
+    <string name="title_pensamientos">Pensamientos</string>
+    <string name="title_categorias">Categorias</string>
+
+    <string name="description_button_add_thought">Botón para añadir un nuevo pensamiento</string>
+    <string name="description_undo_thoughts">Botón para deshacer pensamientos</string>
+    <string name="description_redo_thoughts">Botón para rehacer pensamientos</string>
+
+</resources>
