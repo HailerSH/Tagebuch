@@ -10,8 +10,8 @@ import java.util.Date;
 
 @Entity(tableName = "pensamientos",
         foreignKeys = {@ForeignKey(entity = Categoria.class,
-                                   parentColumns = "id",
-                                   childColumns = "categoria_id",
+                                   parentColumns = "nombre",
+                                   childColumns = "categoria_nombre",
                                    onDelete = ForeignKey.CASCADE)}
         )
 public class Pensamiento {
@@ -23,8 +23,9 @@ public class Pensamiento {
     private String titulo;
     @NonNull
     private String descripcion;
-    @ColumnInfo(name = "categoria_id")
-    private String categoriaId;
+    @ColumnInfo(name = "categoria_nombre")
+    @NonNull
+    private String categoriaNombre;
 
     @NonNull
     public Date getFecha() {
@@ -53,11 +54,12 @@ public class Pensamiento {
         this.descripcion = descripcion;
     }
 
-    public String getCategoriaId() {
-        return categoriaId;
+    @NonNull
+    public String getCategoriaNombre() {
+        return categoriaNombre;
     }
 
-    public void setCategoriaId(String categoriaId) {
-        this.categoriaId = categoriaId;
+    public void setCategoriaNombre(@NonNull String categoriaNombre) {
+        this.categoriaNombre = categoriaNombre;
     }
 }

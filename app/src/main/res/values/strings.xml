@@ -8,4 +8,16 @@
     <string name="description_undo_thoughts">Botón para deshacer pensamientos</string>
     <string name="description_redo_thoughts">Botón para rehacer pensamientos</string>
 
+    <string name="title_reportar_pensamiento">Reportar pensamiento</string>
+    <string name="subtitle_categoria">Categoria</string>
+
+    <string name="button_cancelar">Cancelar</string>
+    <string name="button_siguiente">Siguiente</string>
+    <string name="button_reportar">Reportar</string>
+    
+    <string name="label_titulo">Título</string>
+    <string name="label_descripcion">Descripción</string>
+    <string name="label_categoria">Categoria</string>
+    <string name="label_fecha">22/08/2021 - 2:05 PM</string>
+
 </resources>

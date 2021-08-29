@@ -1,5 +1,6 @@
 package com.dcps.tagebuch.model.dao;
 
+import androidx.room.Dao;
 import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.Query;
@@ -9,6 +10,7 @@ import com.dcps.tagebuch.model.pojo.Categoria;
 
 import java.util.List;
 
+@Dao
 public interface CategoriaRoomDAO {
 
     @Query("SELECT * FROM categorias")
@@ -33,4 +35,6 @@ public interface CategoriaRoomDAO {
     void deleteMany(Categoria... categorias);
     @Query("DELETE FROM categorias WHERE nombre = :nombre")
     void deleteByNombre(String nombre);
+    @Query("DELETE FROM categorias")
+    void deleteAll();
 }
